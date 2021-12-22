@@ -18,9 +18,11 @@ con.connect(function (err) {
     start();
 });
 
+
 // Required Details
 const newMsisdn = '831034585260' // new msisdn to be updated
 const user_id = "b0df2600-1ba9-11ec-9582-d778b20f2b4d" // affected user
+
 
 async function start() {
     let usersSimDetails = await getSimOrderData()
